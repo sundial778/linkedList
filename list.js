@@ -1,4 +1,4 @@
-
+$()
 window.objectCounter = 0
 
 function makeObject(){

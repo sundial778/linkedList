@@ -1,6 +1,26 @@
 /* This is the main styling 
 
 */
+body
+{
+	background-color:beige;
+	background-image: url(img/bg1.jpg);
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:beige;
+}
+
+input{
+	margin:4px;
+	display:block;
+
+}
+
+
+
+
 
 /* For mobile devices */
 @media only screen and (max-width: 990px) {
