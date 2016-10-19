@@ -1,28 +1,217 @@
 /* This is the main styling 
-
 */
-body
+html{ min-height:100%;
+}
+
+span{color:white; margin-left:2px;  margin-right:2px;}
+body {
+  overflow-y:auto;
+  overflow-x: auto;
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  background-image: url(img/bg1.JPG);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-color:beige;
+  color:white;
+  font-size:2vw auto;
+
+
+}
+#projects,#life,#work,#play{
+  background-color:rgba(0,0,0,.5);
+  display:none;
+  
+}
+#contentChanger{
+position:absolute;
+    top:0; bottom:0; left:75%;
+    right:0;
+    width:25%;
+   background-color:rgba(0,0,0,0);
+  
+  
+}
+
+#navDiv{
+  font-size: 20px;
+  padding-top:30px;
+  padding-bottom:30px;
+  margin:10px;
+  position:fixed;
+  bottom:0px;
+
+  text-align:left;
+
+  width:85%;
+  margin-right:auto;
+ 
+
+
+}
+h1{
+  font-size: 4vw;
+  font-weight:100;
+  background-color:black;
+}
+h3{
+  font-weight: 100;
+  font-size:100%;
+  line-height:200%;
+  text-align:left;
+  font-size: 2vw;
+}
+.p{
+
+  margin: 50px auto;
+  font-size: 30px;
+  line-height: 24px;
+
+}
+.mainTitle{
+  float:left;
+  font-size:100%;
+  margin:0px;
+  text-align: left;
+  height:25%;
+  margin:1vw;
+  position:fixed;
+
+
+
+
+}
+.mainContainer
 {
-	background-color:beige;
-	background-image: url(img/bg1.jpg);
-	background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color:beige;
+  margin:10px;
+  padding:1vw;
+  text-align:center;
+   overflow: hidden;
+ }
+#navBar{
+background-color:black;
+ display:inline;
+ width:33%;
+ margin:0;
+ padding:0;
+ font-size:55px;
+color:white;
+
+
+
 }
-
-input{
-	margin:4px;
-	display:block;
+#navBar a {
+  display: inline;
+  padding-right: 30px;
+  padding-left:30px;
+  text-decoration:none;
+  border-spacing:50px;
+  color:white;
 
 }
+a:link {
+ 
+}
+a:visited {
+  color:white;
 
-
-
-
-
+}
+a:hover {
+  color: rgba(0,0,0,0.5);
+      
+}
+#enter_mobile{
+  display:none;
+}
 /* For mobile devices */
 @media only screen and (max-width: 990px) {
+  body
+  {
+    background-image: url(img/bgmobile.JPG);
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover 100%;
+  background-color:beige;
+  color:white;
+  font-size:2vw;
+  background-color:beige;
+  }
+  #contentChanger
+  {
+    display:none;
+  }
+  .mainTitle
+  {
+    left:50px;
+    top:0px;
+    position:absolute;
+    margin:2px;
+    padding:5px;
+    display:inline;
+    height:auto;
+  }
+  .mainContainer{
 
- 
+
+    padding-top: 10%;
+    padding-bottom:10%;
+    text-align:center;
+background:none;
+    overflow: hidden;
+
+  }
+  #navBar{
+
+    display:none;
+
+  }
+  h1{
+    font-size:8vw;
+    background-color:rgba(0,0,0,0);
+    margin:5px;
+  }
+
+  h3
+  {
+    display:none;
+  }
+  #enter_mobile
+  {
+    display:none;
+    background-color:beige;
+    padding-left:15px;
+    padding-right:15px;
+    text-decoration: none;
+    border:1.3px solid black;
+  }
+  #projects,#life,#work,#play
+  {
+    font-size: 5vw;
+    display: block; 
+    float: none; 
+    width: 100%;
+    padding:10px;
+    margin:0px;
+    background:none;
+    float:left;
+  }
+  #projects h4,#life h4,#work h4 ,#play h4
+  {
+    margin-top:0px;
+    letter-spacing:3px;
+    text-transform: uppercase;
+    margin-bottom:0px;
+  background-color:rgba(0,0,0,.8); 
+    font-weight:lighter;
+  }
+  #projects p,#life p,#work p ,#play p
+   { 
+background-color:rgba(0,0,0,.5); 
+    display:none;
+  margin:0px;
+}
+  html{ min-height:100%;
+}
+span{color:black; margin-left:2px;  margin-right:2px;}
