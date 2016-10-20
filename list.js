@@ -1,3 +1,46 @@
+$(document).ready(function() {
+window.objectCounter = 0
+
+function makeObject(){
+    if(objectCounter === 0){
+    objectCounter+=1
+    var objectName = prompt("Listname")
+   window.listName = new list(objectName,0,null);
+    }
+}
+makeObject()
+ function addItem(id)
+
+ {
+  
+    var item = $(id).val();
+  listName.add(item);
+  listName.print();
+ }
+    
+  
+
+ $('#addBtn').click(function(e) {
+  e.preventDefault();
+  addItem("#addBox");
+ });
+
+ function search(id)
+
+ {
+  var item = $(id).val();
+  listName.search(item);
+
+ }
+
+ $('#searchBtn').click(function(e) {
+  e.preventDefault();
+  search("#searchBox");
+
+ });
+
+ //This node is the object that gets put into the list object. It only has 2 attributes the data and next attribute. The next is the 'link' in the list
+ // this autopopulates the data list.
  function randomCharGen(modifier, amt) {
   var numToAdd = null;
   var letrOrNum = null;
@@ -161,3 +204,4 @@
    }
   
  }
+});
