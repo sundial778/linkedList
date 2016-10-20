@@ -1,69 +1,44 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
-    <title>SOLACE</title>
-    <script type="text/javascript">
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+	<title>Linked List GUI</title>
+	
 </head>
-
 <body>
-    <div class="mainContainer">
-        <div class="mainTitle">
-            <h1>FIND S<span >O</span>LACE</h1>
-            <a href="" id="enter_mobile"> Enter </a>
-            <h3 class="sub">In The Small Things
-            </h3>
-
-        </div>
 
 
-        <div id="navDiv">
-            <nav id="navBar">
-                <a href="#projects" id="plink">Projects</a>
-                <a href="#life" id="llink">Life</a>
-                <a href="#work" id="wlink">Work</a>
-                <a href="#Play" id="playLink">Play</a>
-            </nav>
-        </div>
-        <div id="contentChanger">
+<div id="mainContent">
+<form>
+<input type ="text" placeholder="Make a new object " id ="objBox"> <button id ="objCreate"> Create</button>
 
-        </div>
-
-
-        <div id="projects">
-            <h4>Projects</h4>
-            <p>Over the course of Learning and Development, I have done many projects. Here are my best ones.</p>
-            <p>
-                <a href="https://sundial778.github.io/finalProject/index.html">Sams Pc Salvage</a>
-                <a href="https://sundial778.github.io/responsiveDesign/formExample.html">ResponsiveDesign</a>
-                <a href="https://sundial778.github.io/bubblesort/bubblesort.html">BubbleSort</a>
-            </p>
+<input type ="text" placeholder="Search at index #" id ="searchBox"> <button id ="searchBtn"> Search</button>
+<input type ="text" placeholder="Add new node" id ="addBox"> <button id="addBtn"> Add</button>
+<input type ="text" placeholder="wipe at index #" id ="wipeBox"><button id ="wipeBtn"> Wipe</button>
+<input type = "text" placeholder="Swap this node" id ="xBox">
+<input type = "text" placeholder ="and this one" id ="yBox"> <button id ="swapBtn"> Swap</button>
+<button id ="printBtn"> Print all</button>
+<button id ="totalWipeBtn"> Reset list</button>
 
 
-        </div>
-        <div id="life">
-            <h4>Life</h4>
-            <p>My name is Alvin McClintock. I found myself entangled in the world of web design</p></div>
-        <div id="work">
-            <h4>Work</h4>
-            <p>I am a retail IT intern at Carter's. My role is as a junior programmer. I mainly work in ASP.NET and Visual Basic.NET<br />
-                <img src="http://asphostportal.com/img/icon-aspnet.png" alt='asp' style="max-width:50%;">
-            </p>
-        </div>
-        <div id="play">
-            <h4>Play</h4>
-            <p>I play..... sometimes
-                <img src="https://openclipart.org/image/2400px/svg_to_png/145849/1308338872.png" alt='guitar' style="max-width:85%;"></p>
-        </div>
-    </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous">
+
+
+
+
+</form>
+
+
+
+
+</div>
+
+<script
+          src="https://code.jquery.com/jquery-1.12.3.min.js"
+          integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+          crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="main.js"></script>
+<script type = "text/javascript" src ="list.js"></script>
 </body>
-
 </html>

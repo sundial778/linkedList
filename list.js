@@ -1,31 +1,23 @@
-$()
-window.objectCounter = 0
 
-function makeObject(){
-    if(objectCounter === 0){
-    objectCounter+=1
-    var objectName = prompt("Listname")
-      var  objectNametwo = prompt("2nd name")
-   window.listName = new list(objectName,0,null);
-    window.secondObj = new list(objectNametwo,0,null);
-    }
-    return listName;
-}
-makeObject()
+function objCreate(id)
 
- function addItem(id)
+ { 
+      $(id).val() =  new list
+   
+
+
+ }
+  
+  
+ $('#objCreate').click(function(e) {
+  e.preventDefault();
+  objCreate("#objBox");
+ });
+
+ function addItem(objName)
 
  {
-    var oba = "0"
-    var obb = "1"
-    var which = prompt("Which")
-    if(which === obb)
-    {
-        listName = secondObj
-    }
-    else{
-        listName = listName
-    }
+    
   
     var item = $(id).val();
   listName.add(item);
