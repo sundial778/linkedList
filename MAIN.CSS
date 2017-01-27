@@ -1,0 +1,25 @@
+body{
+    background-color:rgb(0, 0, 0);
+    background-image:url(./img/bg1.png);
+    background-size:100%;
+}
+#result{
+    background-color:rgba(0,0,0,0);
+   
+    padding:10px;
+    text-align:center;
+    background-image:url();
+    background-size:contain;
+}
+section{
+    background-color:white;
+   
+    padding:10px;
+    text-align:center;
+  
+}
+#main{
+      box-shadow: 10px 10px;
+      border-radius:10px
+
+ }

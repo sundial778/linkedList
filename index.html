@@ -1,44 +1,47 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
-	<title>Linked List GUI</title>
-	
+    <link rel="stylesheet" href="main.css" />
+    <meta charset="utf-8" />
+    <title></title>
 </head>
 <body>
+    <section id="main">
+        <h1>Search For Artists</h1>
+        <form id ="mainForm">
+            <!--Make dropdown-->
+            <input type="text" id="searchBox" />
+            <input type="button" id="submit" value="submit" />
+            <select name="searchType" id="sBox">
+                <option disabled value="All">All</option>
+                <option disabled value="Album">Albums</option>
+                <option disabled value="Artist">Artists</option>
+                <option value="Song">Track</option>
+               
+            </select>
+        </form>
+        <section>
+            <h1>Load Playlist</h1>
+                <input type ="button" value="Load" id='load'>
 
+                <!-- list of presaved songs -->
 
-<div id="mainContent">
-<form>
-<input type ="text" placeholder="Make a new object " id ="objBox"> <button id ="objCreate"> Create</button>
+                <ol id="lPlaylist">
 
-<input type ="text" placeholder="Search at index #" id ="searchBox"> <button id ="searchBtn"> Search</button>
-<input type ="text" placeholder="Add new node" id ="addBox"> <button id="addBtn"> Add</button>
-<input type ="text" placeholder="wipe at index #" id ="wipeBox"><button id ="wipeBtn"> Wipe</button>
-<input type = "text" placeholder="Swap this node" id ="xBox">
-<input type = "text" placeholder ="and this one" id ="yBox"> <button id ="swapBtn"> Swap</button>
-<button id ="printBtn"> Print all</button>
-<button id ="totalWipeBtn"> Reset list</button>
+                    
+                </ol>
+        </section>
+        <section id ="result">
+            <img src=".\img\empty.png" alt="status" id="resp"/>
 
+            <ol id="values">
+            
+            </ol>
+        </section>
 
-
-
-
-
-</form>
-
-
-
-
-</div>
-
-<script
-          src="https://code.jquery.com/jquery-1.12.3.min.js"
-          integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
-          crossorigin="anonymous">
-    </script>
-<script type = "text/javascript" src ="list.js"></script>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
